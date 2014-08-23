@@ -69,7 +69,7 @@ a {
 /*Main Structure*/
 .main {
     margin: 0px auto;
-    width: 20em;
+    /*width: 20em;*/
 }
 
 .main-header {

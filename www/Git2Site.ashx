@@ -1,4 +1,4 @@
-﻿<%@ WebHandler Language="C#" Class="Get2Site" %>
+﻿<%@ WebHandler Language="C#" Class="Git2Site" %>
 
 using System;
 using System.Web;
@@ -9,7 +9,7 @@ using System.IO;
 
 using ICSharpCode.SharpZipLib.Zip;
 
-public class Get2Site : IHttpHandler
+public class Git2Site : IHttpHandler
 {
 
     public bool IsReusable

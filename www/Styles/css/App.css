@@ -40,11 +40,28 @@ table {
 
 /*Styles*/
 body {
-    background-color: black;
-    color: white;
+    /*background-color: black;
+    color: white;*/
     font: 20px "Arial Narrow";
-    text-transform: uppercase;
     overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 0.5em;
+}
+
+li {
+    padding-bottom: 0.5em;
+    list-style: disc;
+}
+
+a {
+    text-decoration: none;
+    color: #FF6C08;
 }
 
 

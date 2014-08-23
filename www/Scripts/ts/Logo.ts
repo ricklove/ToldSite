@@ -56,7 +56,7 @@ module Told.Logo {
             //pointDistance: 0.01,
             //fps: 20,
 
-            backgroundColor: '#000000',
+            //backgroundColor: '#000000',
 
             path: [
                 //T

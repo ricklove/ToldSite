@@ -34,6 +34,13 @@
 
 - Create links to apps
 
+### 12:20-12:29
+
+- Improve Styles
+
+### 
+
+
 
 
 # TODO

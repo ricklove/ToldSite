@@ -7,21 +7,10 @@
     <link rel="stylesheet" href="Styles/css/App.css">
 </head>
 <body>
-    <canvas id="cvsLogo" width="150" height="90" style="padding-left: 0; padding-right: 0; margin-right: auto; margin-left: auto; display: block;"></canvas>
 
-    <script src="Scripts/js/External/sonic.js"></script>
-    <script src="Scripts/ts/Logo.js"></script>
-    <script>
-        var logoController = Told.Logo.showLogo("cvsLogo");
-        logoController.play();
+    <div class="main">
+        <canvas id="cvsLogo" width="150" height="90" style="padding-left: 0; padding-right: 0; margin-right: auto; margin-left: auto; display: block;"></canvas>
 
-        //setTimeout(logoController.play, 10);
-        //setTimeout(logoController.stop, 500);
-
-
-    </script>
-
-    <div>
         <h3>Told</h3>
 
         <p>We develop great software!</p>
@@ -36,6 +25,18 @@
         </ul>
 
     </div>
+
+    <script src="Scripts/js/External/sonic.js"></script>
+    <script src="Scripts/ts/Logo.js"></script>
+    <script>
+        var logoController = Told.Logo.showLogo("cvsLogo");
+        logoController.play();
+
+        //setTimeout(logoController.play, 10);
+        //setTimeout(logoController.stop, 500);
+
+
+    </script>
 
     <script type="text/javascript">
 

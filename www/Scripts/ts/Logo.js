@@ -33,7 +33,7 @@
                 width: 150,
                 height: 90,
                 canvas: canvas,
-                stepsPerFrame: 8,
+                stepsPerFrame: 3,
                 trailLength: 1.0,
                 pointDistance: 0.04,
                 fps: 10,

@@ -20,9 +20,16 @@
 
 - Add logo
 
-### 11:45-
+### 11:45-12:06
 
 - Test Git2Site
+- Simplify Logo
+
+### 12:07-12:14
+
+- Publish
+- Adjust logo
+
 
 # TODO
 

@@ -57,6 +57,7 @@ h1, h2, h3, h4, h5, h6 {
 li {
     padding-bottom: 0.5em;
     list-style: disc;
+    margin-left: 1em;
 }
 
 a {
@@ -81,6 +82,19 @@ a {
 
 .main-content {
 }
+
+.intro {
+    padding: 1em;
+    background-color: #FF6C08;
+}
+
+.apps {
+    padding: 1em;
+    background-color: #FFD341;
+}
+
+
+
 
 /*Debug*/
 .debug-outline-inner {

@@ -103,7 +103,15 @@ p {
     background-color: #FFD341;
 }
 
+    .apps > div {
+        border: solid 0.1em #FF3000;
+        padding: 1em;
+        margin-bottom: 1em;
+    }
 
+        .apps > div > h4 {
+            padding: 0em;
+        }
 
 
 /*Debug*/

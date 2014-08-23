@@ -55,6 +55,10 @@
 
 - Add App Images
 
+### 15:24-15:28
+
+- Center images
+
 
 
 # TODO

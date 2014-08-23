@@ -113,6 +113,15 @@ p {
             padding: 0em;
         }
 
+        .apps > div > .icon {
+            text-align: center;
+            margin: 0 auto;
+        }
+
+            .apps > div > .icon > img {
+                width: 240px;
+            }
+
 
 /*Debug*/
 .debug-outline-inner {

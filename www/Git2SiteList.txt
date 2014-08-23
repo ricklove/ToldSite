@@ -1,4 +1,5 @@
-﻿https://github.com/ricklove/CommonCoreMathProblems/archive/master.zip	Apps/CommonCoreMathProblems
+﻿https://github.com/ricklove/ToldSite/archive/master.zip	/
+https://github.com/ricklove/CommonCoreMathProblems/archive/master.zip	Apps/CommonCoreMathProblems
 https://github.com/ricklove/SpiderMath/archive/master.zip	Apps/SpiderMath
 https://github.com/ricklove/GreekBibleApp/archive/master.zip	Apps/GreekBible
 https://github.com/ricklove/MemPuzzle/archive/master.zip	Apps/MemPuzzle

@@ -54,7 +54,7 @@ public class Git2Site : IHttpHandler
         var list = GetPublishList();
 
         var t = list.Select((p, index) => new { p = p, index = index }).Aggregate(new System.Text.StringBuilder(),
-            (s, p) => s.AppendLine(p.index + "    " + p.p.GitHubUrl.ToString() + "    " + p.p.DestinationRelativePath));
+            (s, p) => s.AppendLine(p.index + "    '" + p.p.GitHubUrl.ToString() + "'  ->  '" + p.p.DestinationRelativePath + "'"));
 
         Context.Response.Write(t.ToString());
         Context.Response.End();
@@ -86,9 +86,9 @@ public class Git2Site : IHttpHandler
         Context.Response.Write("-------------\r\n");
         Context.Response.Write("-------------\r\n");
         Context.Response.Write("Publish Repo:\r\n");
-        Context.Response.Write(p.GitHubUrl.OriginalString + "\r\n");
+        Context.Response.Write("'" + p.GitHubUrl.OriginalString + "'" + "\r\n");
         Context.Response.Write("to\r\n");
-        Context.Response.Write(p.DestinationRelativePath + "\r\n");
+        Context.Response.Write("'" + p.DestinationRelativePath + "'" + "\r\n");
         Context.Response.Write("-------------\r\n");
 
         var zipUrl = p.GitHubUrl;
@@ -114,13 +114,13 @@ public class Git2Site : IHttpHandler
         // Copy to dest path
         var repoDirName = Directory.GetDirectories(unzipDirPath)[0].TrimEnd('\\');
         var sourceDirPath = repoDirName + "\\www\\";
-        var destDirPath = Server.MapPath("~/" + p.DestinationRelativePath + "/");
+        var destDirPath = Server.MapPath("~/" + p.DestinationRelativePath);
 
 
         var filesToMove = Directory.GetFiles(sourceDirPath, "*.*", SearchOption.AllDirectories);
 
         var filesSkipped = new System.Text.StringBuilder();
-        
+
         foreach (var f in filesToMove)
         {
             var relPath = f.Substring(sourceDirPath.Length);
@@ -187,8 +187,9 @@ public class Git2Site : IHttpHandler
                       let parts = line.Split()
                       where parts.Length == 2
                       let url = new Uri(parts[0].Trim())
-                      let path = parts[1].Trim(new char[] { '\\', ' ' })
-                      select new PublishEntry() { GitHubUrl = url, DestinationRelativePath = path };
+                      let path = parts[1].Trim(new char[] { '\\', ' ' }).TrimEnd(new char[] { '/', ' ' })
+                      let pathB = path != "" ? path + "/" : path
+                      select new PublishEntry() { GitHubUrl = url, DestinationRelativePath = pathB };
 
         return entries.ToList();
     }

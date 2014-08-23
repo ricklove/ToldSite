@@ -1,1 +1,177 @@
-﻿
+﻿/*Colors at bottom*/
+
+/*Reset All*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*Styles*/
+body {
+    background-color: black;
+    color: white;
+    font: 20px "Arial Narrow";
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+
+/*Main Structure*/
+.main {
+    margin: 0px auto;
+    width: 20em;
+}
+
+.main-header {
+    display: none;
+}
+
+.main-footer {
+    display: none;
+}
+
+.main-content {
+}
+
+/*Debug*/
+.debug-outline-inner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20em;
+    height: 27em;
+    border: solid 1px red;
+}
+
+/*---------------------------------------*/
+/*Colors---------------------------------*/
+/*---------------------------------------*/
+fake {
+    /*Orange*/
+    color: #FF8C41;
+    /*Red*/
+    color: #E8252B;
+    /*Purple*/
+    color: #CF29FF;
+    /*Blue*/
+    color: #332FE8;
+    /*Cyan*/
+    color: #34C4FF;
+}
+
+/*Yellow ffde41*/
+.info-stars, fake {
+    color: #ffde41;
+}
+
+fake {
+    background-color: #ffde41;
+    color: black;
+}
+
+
+/*Orange*/
+fake {
+    color: #FF8C41;
+}
+
+.user-addUser, .info-score, fake {
+    background-color: #FF8C41;
+}
+
+
+
+/*Red*/
+.scoreBad, fake {
+    color: #E8252B;
+}
+
+.info-gameOverMessage-bad, fake {
+    background-color: #E8252B;
+}
+
+/*Purple*/
+fake {
+    color: #CF29FF;
+}
+
+.info-pause, .info-stage, fake {
+    background-color: #CF29FF;
+}
+
+/*Blue*/
+.scoreGood, fake {
+    color: #332FE8;
+}
+
+.info-gameOverMessage-good, fake {
+    background-color: #332FE8;
+}
+
+/*Cyan*/
+fake {
+    color: #34C4FF;
+}
+
+.info-gameMenu, .commands-gameOver, .commands-pause, fake {
+    background-color: #34C4FF;
+    color: black;
+}
+
+
+
+
+/*---------------------------------------*/
+/* Border Colors */
+.screen {
+    border: 1px solid white;
+}
+
+.screen-game, .screen-ad {
+    border: none;
+}
+
+
+.listItemContent {
+    border: 0.25em solid #ffde41;
+}
+
+.listItemContent-user {
+    border: 0.25em solid #FF8C41;
+}
+
+.listItemLock > .listItemContent {
+    border: 0.25em solid #E8252B;
+}

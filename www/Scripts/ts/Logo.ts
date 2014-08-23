@@ -1,10 +1,8 @@
-﻿
-declare var Sonic;
+﻿declare var Sonic;
 
-// LOADING
-module Told.MemPuzzle {
+module Told.Logo {
 
-    export function showLoading(canvasId: string): () => void {
+    export function showLogo(canvasId: string) {
 
         var canvas = <HTMLCanvasElement> document.getElementById(canvasId);
         var context = canvas.getContext('2d');
@@ -38,6 +36,7 @@ module Told.MemPuzzle {
         var x = 25;
         var y = 25;
         var m = 5;
+
 
         var sonic = new Sonic({
 
@@ -93,11 +92,14 @@ module Told.MemPuzzle {
 
         });
 
-        sonic.play();
+        //sonic.play();
 
         //document.body.appendChild(sonic.canvas);
 
-        return () => { sonic.stop(); };
+        return {
+            play: () => { sonic.play(); },
+            stop: () => { sonic.stop(); },
+        };
 
     }
 }

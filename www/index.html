@@ -6,14 +6,21 @@
     <meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="Styles/css/App.css">
 </head>
-<body style="background-color: black">
-    <canvas id="cvsMain" width="600" height="400" style="padding-left: 0; padding-right: 0; margin-left: auto; margin-right: auto; display: block;"></canvas>
+<body>
+    <canvas id="cvsMain" width="150" height="90" style="padding-left: 0; padding-right: 0; margin-right: auto; margin-left: auto; display: block;"></canvas>
 
     <script src="Scripts/js/External/sonic.js"></script>
-    <script src="Scripts/ts/Loading.js"></script>
+    <script src="Scripts/ts/Logo.js"></script>
     <script>
-        var stopLoading = Told.MemPuzzle.showLoading("cvsMain");
+        var logoController = Told.Logo.showLogo("cvsMain");
+        logoController.play();
+
+        //setTimeout(logoController.play, 10);
+        //setTimeout(logoController.stop, 500);
+
     </script>
+
+    This is TOLD!
 
     <script type="text/javascript">
 
@@ -24,105 +31,7 @@
         }
 
         function runOnLoad() {
-            //addScript("Scripts/ts/System/AppSettings.js");
-            //addScript("Scripts/ts/System/Analytics.js");
-            //addScript("Scripts/ts/System/Debug.js");
-
-            //addScript("Scripts/js/External/fabric.min.js");
-
-            //addScript("Scripts/ts/ImageSource.js");
-            //addScript("Scripts/ts/PuzzleImages.js");
-            //addScript("Scripts/ts/MemPuzzle.js");
-            //addScript("Scripts/ts/Subject.js");
-            //addScript("Scripts/ts/Subjects/SightWords.js");
-
-            //addScript("Scripts/js/External/algoTree.js");
-
-            //var wasLoaded_LoggingSystem = false;
-            //var wasLoaded_External = false;
-            //var wasLoaded_App = false;
-
-            //// Show loading screen for min time
-            //var doWhenLoaded = function () {
-            //    setTimeout(doLoadScripts, 3000);
-            //}
-
-            //var doLoadScripts = function () {
-
-            //    if (!window.Told
-
-            //        || !Told.AppSettings
-            //        || !Told.Analytics
-            //        || !Told.Debug
-
-            //        ) {
-
-            //        setTimeout(doLoadScripts, 500);
-            //        return;
-            //    }
-
-            //    if (!wasLoaded_LoggingSystem) {
-            //        Told.log("Loader", "Loaded Logging System", true);
-            //        wasLoaded_LoggingSystem = true;
-            //    }
-
-            //    if (!window.fabric
-
-            //        ) {
-
-            //        setTimeout(doLoadScripts, 500);
-            //        return;
-            //    }
-
-            //    if (!wasLoaded_External) {
-            //        Told.log("Loader", "Loaded External", true);
-            //        wasLoaded_External = true;
-            //    }
-
-            //    if (!window.Told
-
-            //        || !Told.MemPuzzle
-            //        || !Told.MemPuzzle.MemPuzzle
-            //        || !Told.MemPuzzle.ImageSource
-            //        || !Told.MemPuzzle.PuzzleImages
-            //        || !Told.MemPuzzle.Subject
-            //        || !Told.MemPuzzle.Subjects
-
-            //        || !window.tree
-
-            //        ) {
-
-            //        setTimeout(doLoadScripts, 500);
-            //        return;
-            //    }
-
-            //    if (!wasLoaded_App) {
-            //        Told.log("Loader", "Loaded App", true);
-            //        wasLoaded_App = true;
-            //    }
-
-            //    Told.log("Loader", "Loaded Scripts", true);
-            //    Told.enableErrorLogging();
-            //    Told.Analytics.trackPageView();
-
-            //    stopLoading();
-
-            //    puzzle = new Told.MemPuzzle.MemPuzzle("cvsPuzzle");
-            //    //puzzle.createPuzzleFromImage("test.png");
-            //    //puzzle.createPuzzleFromText("testlTjJ");
-            //    //puzzle.createPuzzleFromText("Tiger");
-            //    //puzzle.createPuzzleFromText("Psychology");
-            //    //puzzle.createPuzzleFromText("whale");
-            //    //puzzle.createPuzzleFromText("please");
-            //    //puzzle.createPuzzleFromText("Czechoslovakia ");
-            //    //puzzle.createPuzzleFromText("conscientious ");
-            //    //puzzle.drawShapeTest();
-
-            //    controller = new Told.MemPuzzle.Subject.SubjectController(puzzle);
-            //    controller.loadSubject(new Told.MemPuzzle.Subjects.SightWords());
-            //};
-
-            //doWhenLoaded();
+            //setTimeout(stopLogo, 3000);
         }
 
         if (window.addEventListener)

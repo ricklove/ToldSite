@@ -1,8 +1,7 @@
 ﻿var Told;
 (function (Told) {
-    // LOADING
-    (function (MemPuzzle) {
-        function showLoading(canvasId) {
+    (function (Logo) {
+        function showLogo(canvasId) {
             var canvas = document.getElementById(canvasId);
             var context = canvas.getContext('2d');
 
@@ -73,14 +72,18 @@
                 }
             });
 
-            sonic.play();
-
+            //sonic.play();
             //document.body.appendChild(sonic.canvas);
-            return function () {
-                sonic.stop();
+            return {
+                play: function () {
+                    sonic.play();
+                },
+                stop: function () {
+                    sonic.stop();
+                }
             };
         }
-        MemPuzzle.showLoading = showLoading;
-    })(Told.MemPuzzle || (Told.MemPuzzle = {}));
-    var MemPuzzle = Told.MemPuzzle;
+        Logo.showLogo = showLogo;
+    })(Told.Logo || (Told.Logo = {}));
+    var Logo = Told.Logo;
 })(Told || (Told = {}));

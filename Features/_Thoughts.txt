@@ -1,0 +1,17 @@
+AppPublisher:
+
+	Publish WebApp from GitHub to Told WebSite
+
+SitePublisher:
+
+	Publish Told WebSite from GitHub to WebSite
+
+Told Logo:
+
+	Show logo on loading screen
+	- Black background (with lightning flashes)
+	- Flash t cross
+	- Flash o empty tomb
+	- Flash l hand with hole in wrist
+	- Show told
+	- Show toldpro.com

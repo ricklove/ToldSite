@@ -30,6 +30,11 @@
 - Publish
 - Adjust logo
 
+### 12:15-12:19
+
+- Create links to apps
+
+
 
 # TODO
 

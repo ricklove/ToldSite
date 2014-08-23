@@ -50,7 +50,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.2em;
     text-transform: uppercase;
     text-align: center;
-    padding-top: 2em;
+    /*padding-top: 2em;*/
     padding-bottom: 0.5em;
 }
 
@@ -98,6 +98,13 @@ p {
     background-color: #FF6C08;
 }
 
+    .intro > div {
+        border: solid 0.1em #FF3000;
+        background-color: #FFFFFF;
+        padding: 1em;
+        margin-bottom: 1em;
+    }
+
 .apps {
     padding: 1em;
     background-color: #FFD341;
@@ -105,6 +112,8 @@ p {
 
     .apps > div {
         border: solid 0.1em #FF3000;
+        /*border: solid 0.1em #FF6C08;*/
+        background-color: #FFFFFF;
         padding: 1em;
         margin-bottom: 1em;
     }
@@ -113,14 +122,14 @@ p {
             padding: 0em;
         }
 
-        .apps > div > .icon {
-            text-align: center;
-            margin: 0 auto;
-        }
+.icon {
+    text-align: center;
+    margin: 0 auto;
+}
 
-            .apps > div > .icon > img {
-                width: 240px;
-            }
+    .icon > img {
+        width: 240px;
+    }
 
 
 /*Debug*/

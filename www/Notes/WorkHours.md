@@ -59,6 +59,9 @@
 
 - Center images
 
+### 16:40-16:54
+
+- Add my picture and description
 
 
 # TODO

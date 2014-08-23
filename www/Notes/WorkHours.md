@@ -42,6 +42,10 @@
 
 - Improve Styles
 
+### 13:56-14:46
+
+- Adding App Descriptions
+
 
 
 

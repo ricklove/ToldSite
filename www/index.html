@@ -191,6 +191,8 @@
 
     </div>
 
+    <script src="Scripts/ts/Analytics.js"></script>
+
     <script src="Scripts/js/External/jquery.min.js"></script>
 
     <script>
@@ -214,6 +216,8 @@
                 $("#infoRequest")
                     .text("You will receive an email in the next day. Please check your junk mail for any mail from toldpro.com if you do not receive anything soon.")
                     .show();
+
+                Told.Analytics.GoogleAnalyticsMeasurementProtocol.trackEvent("FormRequest", "Form Sent", "email: " + email, "");
             }
 
             event.preventDefault();
@@ -243,6 +247,8 @@
 
         function runOnLoad() {
             //setTimeout(stopLogo, 3000);
+
+            Told.Analytics.GoogleAnalyticsMeasurementProtocol.trackEvent("Page", "Loaded", "", "");
         }
 
         if (window.addEventListener)

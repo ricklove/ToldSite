@@ -76,6 +76,11 @@
 - Publish
 - Test email - OK
 
+### 6:20-6:36
+
+- Setup analytics
+
+
 
 # TODO
 

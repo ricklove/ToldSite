@@ -71,6 +71,11 @@
 
 - Add email button
 
+### 6:12-6:19
+
+- Publish
+- Test email - OK
+
 
 # TODO
 

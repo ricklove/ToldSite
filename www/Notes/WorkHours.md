@@ -63,6 +63,10 @@
 
 - Add my picture and description
 
+### 2014-08-24 3:45-4:54
+
+- Adjust overall look
+
 
 # TODO
 

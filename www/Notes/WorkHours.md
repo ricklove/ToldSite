@@ -80,6 +80,9 @@
 
 - Setup analytics
 
+### 6:37-6:47
+
+- Track link clicks
 
 
 # TODO

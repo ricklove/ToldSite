@@ -196,6 +196,7 @@
     <script src="Scripts/js/External/jquery.min.js"></script>
 
     <script>
+        // Setup form
 
         var frm = $("#formRequest");
         frm.submit(function () {
@@ -221,6 +222,24 @@
             }
 
             event.preventDefault();
+        });
+
+    </script>
+
+    <script>
+        // Track all href clicks
+        function trackLink(url) {
+
+            Told.Analytics.GoogleAnalyticsMeasurementProtocol.trackEvent("Link", "Click", url, "");
+
+            setTimeout(function () {
+                document.location.href = url;
+            }, 100);
+        }
+
+        $("a").click(function (event) {
+            trackLink(this.href);
+            return false;
         });
 
     </script>

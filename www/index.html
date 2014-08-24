@@ -61,6 +61,31 @@
             </div>
         </div>
 
+        <div class="business">
+            <h4>Create Your App</h4>
+
+            <div>Create the right type of app that will most benefit your business.</div>
+
+            <a class="button" href="#startApp">I want my customers to love my business
+            </a>
+            <a class="button" href="#startApp">I want my employees to maximize their productivity 
+            </a>
+        </div>
+
+        <div id="startApp" class="form">
+            <h4>Start Your Business App</h4>
+            <p>
+                Enter your email address and I will contact you directly to begin discussing how an app could benefit your business.
+            </p>
+            <form id="formRequest">
+                <span id="errEmail" class="error"></span>
+                <label>Email</label>
+                <input id="txtEmail" type="text" required="required" placeholder="Email" />
+                <input class="button" type="submit" value="Request Consultation" />
+            </form>
+            <div id="infoRequest" class="info"></div>
+        </div>
+
         <div class="apps">
             <h3>Apps</h3>
             <div>
@@ -165,6 +190,36 @@
         </div>
 
     </div>
+
+    <script src="Scripts/js/External/jquery.min.js"></script>
+
+    <script>
+
+        var frm = $("#formRequest");
+        frm.submit(function () {
+
+            var email = $("#txtEmail").val();
+
+            if (email.length <= 0
+                || email.indexOf("@") <= 0
+                || email.indexOf(".") <= 0) {
+
+                $("#errEmail").text("Please enter a valid email address").show();
+            } else {
+                var url = "EmailSender.ashx?email=" + encodeURIComponent(email);
+                $.ajax(url);
+
+                $("#errEmail").hide();
+                frm.hide();
+                $("#infoRequest")
+                    .text("You will receive an email in the next day. Please check your junk mail for any mail from toldpro.com if you do not receive anything soon.")
+                    .show();
+            }
+
+            event.preventDefault();
+        });
+
+    </script>
 
     <script src="Scripts/js/External/sonic.js"></script>
     <script src="Scripts/ts/Logo.js"></script>

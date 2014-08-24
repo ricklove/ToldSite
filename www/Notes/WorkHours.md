@@ -67,6 +67,10 @@
 
 - Adjust overall look
 
+### 4:55-6:11
+
+- Add email button
+
 
 # TODO
 

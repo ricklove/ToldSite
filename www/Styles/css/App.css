@@ -176,6 +176,40 @@ p {
         width: 240px;
     }
 
+.business {
+}
+
+.form {
+    padding: 2em;
+}
+
+    .form > form > label {
+        display: none;
+    }
+
+    .form > form > input, .form > form > span {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .form > form > .error {
+        color: red;
+        text-align: center;
+    }
+
+.info {
+    color: #FF6C08;
+    padding: 1em;
+}
+
+.button {
+    display: block;
+    background-color: #FF6C08;
+    color: white;
+    margin: 1em 2em;
+    padding: 1em;
+}
+
 
 /*Debug*/
 .debug-outline-inner {

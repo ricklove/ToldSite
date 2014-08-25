@@ -84,6 +84,11 @@
 
 - Track link clicks
 
+### 6:48-6:51
+
+- Publish
+- Test link tracking - OK
+
 
 # TODO
 

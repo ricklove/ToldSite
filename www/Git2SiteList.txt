@@ -3,3 +3,5 @@ https://github.com/ricklove/CommonCoreMathProblems/archive/master.zip	Apps/Commo
 https://github.com/ricklove/SpiderMath/archive/master.zip	Apps/SpiderMath
 https://github.com/ricklove/GreekBibleApp/archive/master.zip	Apps/GreekBible
 https://github.com/ricklove/MemPuzzle/archive/master.zip	Apps/MemPuzzle
+https://github.com/ricklove/BlockWars/archive/master.zip	Apps/BlockWars
+https://github.com/ricklove/BushRun/archive/master.zip	Apps/BushRun
